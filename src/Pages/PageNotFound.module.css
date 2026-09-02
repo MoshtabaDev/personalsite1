@@ -1,0 +1,130 @@
+.container .main .top {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.container .main .top .imgError img {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.container .main .top .right h2 {
+  color: #facc15;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.container .main .top .right p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container .main .top .right .backHomeButton {
+  border: 2px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #facc15;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.container .main .bottom {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #151515;
+  width: 70%;
+  margin: 30px auto 0;
+}
+
+.container .main .bottom .left {
+  background-color: inherit;
+}
+
+.container .main .bottom .left img {
+  width: 120px;
+  background-color: inherit;
+}
+
+.container .main .bottom .right {
+  background-color: inherit;
+  margin-left: 40px;
+}
+
+.container .main .bottom .right p {
+  background-color: inherit;
+  color: #facc15;
+  font-size: 1.2rem;
+}
+
+.container .main .bottom .right .pages {
+  background-color: inherit;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+
+.container .main .bottom .right .pages .links {
+  background-color: inherit;
+  margin: 0 50px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .main .bottom .right .pages .links:hover {
+  color: #facc15;
+}
+
+@media (max-width: 480px) {
+  .container .main .top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .container .main .top .imgError img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .main .top .right h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .container .main .top .right p {
+    font-size: 0.95rem;
+  }
+
+  .container .main .bottom {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .container .main .bottom .right {
+    margin-left: 0;
+  }
+
+  .container .main .bottom .right .pages {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .container .main .bottom .right .pages .links {
+    margin: 0;
+    font-size: 1rem;
+  }
+}

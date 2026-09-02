@@ -1,0 +1,87 @@
+.listOfProjects {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  column-gap: 250px;
+  row-gap: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.listOfProjects .project {
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(21, 21, 21);
+  border-radius: 15px;
+}
+
+.listOfProjects .project h2 {
+  color: #facc15;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  background-color: inherit;
+}
+
+.listOfProjects .project p {
+  background-color: inherit;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.listOfProjects .project a {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1280px) {
+  .listOfProjects {
+    column-gap: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .listOfProjects {
+    display: block;
+    margin-left: 0;
+  }
+
+  .listOfProjects .project {
+    width: 600px;
+    max-width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .listOfProjects {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 15px 0 0;
+  }
+
+  .listOfProjects .project {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+  }
+
+  .listOfProjects .project h2 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+
+  .listOfProjects .project p {
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .listOfProjects .project a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  min-height: 100vh;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 30px);
+    max-width: none;
+  }
+}

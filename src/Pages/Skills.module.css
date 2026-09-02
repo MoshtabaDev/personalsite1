@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.container .leftHand {
+  width: 20%;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.container .leftHand h1 {
+  color: #facc15;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .container .leftHand {
+    width: 25%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .container .leftHand {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .container .leftHand h1 {
+    font-size: 2rem;
+  }
+
+  .container .rightHand {
+    width: 100%;
+  }
+}
